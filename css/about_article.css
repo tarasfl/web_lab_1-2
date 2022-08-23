@@ -1,0 +1,55 @@
+.about_article {
+    color: white;
+    max-height: 399px;
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article > h2 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0;
+    color: #222F33;
+
+}
+
+.article > pre {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #646D70;
+}
+
+.read_more {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #606B74;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#img_1 {
+    padding: 0;
+    margin: 0;
+}
+
+.right_bar {
+    padding: 0;
+}

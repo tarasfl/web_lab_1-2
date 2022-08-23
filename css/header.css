@@ -1,0 +1,88 @@
+header {
+    height: 600px;
+    border: 1px solid #c3c3c3;
+    background-image: url('images/header_img.png');
+    background-repeat: no-repeat;
+    color: white;  
+}
+
+header > .container {
+    margin: 0;
+}
+
+.actual_header {
+    display: flex;
+    margin-top: 37px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_item {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav_item > a {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contact {
+    display: flex;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    font-size:12px;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 90px;
+    cursor: pointer;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_article {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 120px;
+}
+
+.watch_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image_2 {
+    height: 355px;
+    width: auto;
+}
+
+.article > h2 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+    color: white;
+}

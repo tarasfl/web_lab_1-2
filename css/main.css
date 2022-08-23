@@ -1,0 +1,40 @@
+@import url('normalize.min.css');
+@import url('header.css');
+@import url('materials.css');
+@import url('about_article.css');
+@import url('footer.css');
+@import url('innovative.css');
+
+h2{
+    font-family: Merriweather;
+}
+
+body{
+    font-family: Rubik;
+    border: 1px solid #c3c3c3;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:black;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.bar_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.article > h2 {
+    color: white;
+}
