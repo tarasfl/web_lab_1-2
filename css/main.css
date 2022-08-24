@@ -35,6 +35,112 @@ a:hover {
     justify-content: space-evenly;
 }
 
-.article > h2 {
-    color: white;
+@media screen and (max-width: 360px) {
+    .container {
+        max-width: 320px;
+        margin: auto;
+    }
+    .bar_content {
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
+}
+
+@keyframes change_colors {
+    0% {color: cornsilk;}
+    5% {color: blueviolet;}
+    10% {color:chartreuse;}
+    15% {color:greenyellow;}
+    20% {color: rgb(31, 137, 102);}
+    25% {color: rgb(83, 87, 14);}
+    30% {color: rgb(214, 81, 37);}
+    35% {color: rgb(129, 21, 71);}
+    40% {color: rgb(11, 57, 97);}
+    45% {color: rgb(173, 216, 218);}
+    50% {color: rgb(40, 155, 97);}
+    55% {color: rgb(216, 242, 21);}
+    60% {color: rgb(225, 38, 141);}
+    65% {color: rgb(18, 196, 21);}
+    70% {color: rgb(146, 22, 155);}
+    75% {color: rgb(43, 199, 53);}
+    80% {color: rgb(218, 194, 102);}
+    85% {color: rgb(103, 59, 145);}
+    90% {color: rgb(183, 55, 87);}
+    95% {color: rgb(81, 212, 133);}
+    100% {color: rgb(255, 255, 255);}
+}
+
+.header_article > .article > p {
+    animation-name: change_colors;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(-15deg)}
+    2% {transform: rotate(-25deg)}
+    4% {transform: rotate(-50deg)}
+    6% {transform: rotate(-80deg)}
+    8% {transform: rotate(-120deg)}
+    10% {transform: rotate(-180deg)}
+    12% {transform: rotate(-220deg)}
+    14% {transform: rotate(-260deg)}
+    16% {transform: rotate(-300deg)}
+    18% {transform: rotate(-360deg)}
+    20% {transform: rotate(0deg)}
+    22% {transform: rotate(-15deg)}
+    24% {transform: rotate(-25deg)}
+    26% {transform: rotate(-50deg)}
+    28% {transform: rotate(-80deg)}
+    30% {transform: rotate(-120deg)}
+    32% {transform: rotate(-180deg)}
+    34% {transform: rotate(-220deg)}
+    36% {transform: rotate(-260deg)}
+    38% {transform: rotate(-300deg)}
+    40% {transform: rotate(-360deg)}
+    42% {transform: rotate(0deg)}
+    44% {transform: rotate(-15deg)}
+    46% {transform: rotate(-25deg)}
+    48% {transform: rotate(-50deg)}
+    50% {transform: rotate(-80deg)}
+    52% {transform: rotate(-120deg)}
+    54% {transform: rotate(-180deg)}
+    56% {transform: rotate(-220deg)}
+    58% {transform: rotate(-260deg)}
+    60% {transform: rotate(-300deg)}
+    62% {transform: rotate(-360deg)}
+    64% {transform: rotate(0deg)}
+    66% {transform: rotate(-15deg)}
+    68% {transform: rotate(-25deg)}
+    70% {transform: rotate(-50deg)}
+    72% {transform: rotate(-80deg)}
+    74% {transform: rotate(-120deg)}
+    76% {transform: rotate(-180deg)}
+    78% {transform: rotate(-220deg)}
+    80% {transform: rotate(-260deg)}
+    82% {transform: rotate(-300deg)}
+    84% {transform: rotate(-360deg)}
+    86% {transform: rotate(0deg)}
+    88% {transform: rotate(-15deg)}
+    90% {transform: rotate(-25deg)}
+    92% {transform: rotate(-50deg)}
+    94% {transform: rotate(-80deg)}
+    96% {transform: rotate(-120deg)}
+    98% {transform: rotate(-180deg)}
+    100% {transform: rotate(0deg)}
+}
+
+.watch_button > p {
+    animation-name: rotate;
+    animation-duration: 1s;
+}   
+
+@keyframes move {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.logo {
+    animation-name: move;
+    animation-duration: 1s;
 }

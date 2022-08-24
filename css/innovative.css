@@ -17,7 +17,7 @@
     margin-right: 40px;
 }
 
-.left_bar > pre {
+.left_bar > p{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -34,7 +34,7 @@
     line-height: 38px;
 }
 
-.right_bar > pre {
+.right_bar > p {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -50,4 +50,24 @@
     font-size: 30px;
     line-height: 38px;
     opacity: 0;
+}
+
+@media screen and (max-width: 360px) {
+    .innovative_block {
+        max-width: 320px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .innovative_block > .container > .bar_content > .left_bar{
+        margin-right:0;
+    }
+    .right_bar > p > br {
+        display: none;
+    }
+    .left_bar > p > br {
+        display: none;
+    }
 }

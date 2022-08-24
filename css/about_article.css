@@ -1,13 +1,10 @@
 .about_article {
-    color: white;
     max-height: 399px;
-}
-
-.article {
     margin-bottom: 40px;
 }
 
-.article > h2 {
+
+.about_article > h2 {
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 900;
@@ -15,10 +12,9 @@
     line-height: 38px;
     margin: 0;
     color: #222F33;
-
 }
 
-.article > pre {
+.about_article > p {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -52,4 +48,34 @@
 
 .right_bar {
     padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 360px) {
+    .about_article {
+        max-width: 320px;
+        max-height: none;
+    }
+    .about_article > p > br {
+        display: none;
+    }
+    .about_article > p {
+        display: inline-block;
+        text-align: center;
+        line-break: normal;
+    }
+    .about_article > h2 {
+        text-align: center;
+    }
+    .read_more {
+        margin-bottom: 20px;
+    }
+    #img_1 {
+        width: 320px;
+    }
+    .about_article > .container > .bar_content > .left_bar {
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
 }
