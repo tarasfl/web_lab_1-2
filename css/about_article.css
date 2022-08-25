@@ -51,9 +51,26 @@
     margin: 0;
 }
 
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+    .about_article > p {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        width: 960px;
+    }
+
+    .about_article > h2 {
+        font-size: 46px;
+    }
+    .about_article > p > br {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .about_article {
         max-width: 320px;
+        width: auto;
         max-height: none;
     }
     .about_article > p > br {

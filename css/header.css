@@ -11,6 +11,24 @@ header {
     display: none;
 }
 
+#hamburger_menu {
+    width: 32px;
+    height: 25px;
+    border-radius: 2px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+      to bottom, 
+      white,white 16%, 
+      transparent 16%, transparent 42%, 
+      white 42%, white 58%, 
+      transparent 58%, transparent 84%, 
+      white 84%, white 100%
+    );
+}
+
 header > .container {
     margin: 0;
 }
@@ -91,9 +109,81 @@ header > .container {
     line-height: 38px;
 }
 
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+    header {
+        width: auto;
+        border: 1px solid #c3c3c3;
+        background-image: url('images/header_img.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .nav_item > a {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 24px;
+    }
+
+    .article > h2 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .about_article > p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .header_article {
+        justify-content: space-evenly;
+    }
+    .actual_header {
+        justify-content: space-evenly;
+    }
+
+    .watch_button > img {
+        height: 128px;
+    }
+
+    .watch_button > p {
+        font-weight: 400;
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 360px) {
-    .nav_menu {
+    .menu {
+        position: absolute;    
         display: none;
+        background-color: #222F33;
+        left: 0;
+        height: 320px;
+        width: 200px;
+        border-radius: 2px;
+        z-index: 1;
+    }
+
+    .nav_menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+    }
+
+
+    .nav_item > a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .nav_item {
+        text-align: center;
+        margin-bottom: 10px;
+        list-style: none;
     }
     .header_article {
         display: flex;
@@ -110,16 +200,14 @@ header > .container {
     }
     header {
         height: 600px;
+        max-width: 320px;
         border: 1px solid #c3c3c3;
         background-image: url('images/header_img.png');
         background-repeat: no-repeat;
         background-position: center center;
     }
-    
-    .burger {
+
+    #hamburger_menu {
         display: inline;
-    }
-    .burger > img {
-        height:16px;
     }
 }
